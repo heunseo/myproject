@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <img src="ufo3.png" height="300" alt="우주선" title="우주선 이미지">
+    <!--이미지 불러오기-->
+
+<table border="2">
+    <tr>
+        <td>이름</td>     <td>성별</td>   <td>주소</td>
+    </tr>
+    <tr>
+        <td>허은서</td>  <td>여</td>      <td >시흥</td>
+    </tr>
+    <tr>
+        <td>허재웅</td>  <td>남</td>      <td>서울</td>
+    </tr>
+</table>
+<!--표만들기-->
+
+<ul>
+<li>첫번째</li>
+<li>두번째</li>
+<li>세번째</li>
+</ul>
+<!--리스트 만들기, ul은 번호(순서)가 필요 없을 때-->
+
+<ol>
+<li>첫번째</li>
+<li>두번째</li>
+<li>세번째</li>
+</ol>
+<!--리스트 만들기, ol은 번호(순서)가 나온다.-->
+
+<form action="http://localhost/login.php">
+<!--입력된 정보를 submit을 눌렀을때 어디로 보낼지-->
+
+    <p>아이디 : <input type="text" name="id"></p>
+    <p>비밀번호 : <input type="password" name="pwd"></p>
+    <!--password타입은 동그라미 모양으로, 보이지 않게 입력됨-->
+    <p>주소 : <input type="text" name="address"></p>
+    <input type="submit">
+
+    <p>textarea :
+            <textarea cols="50" rows="2">default value</textarea>
+    <!--여러 줄로 txt를 입력받을때 - textarea -->
+</form>
+
+<form action="http://localhost/color.php">
+<h1>색상</h1>
+     <select name="color">
+        <option value="red">붉은색</option>
+        <!--눈에 보이는것은 붉은색이지만 실제로 전송되는 것은 value에 있는 것(red)-->
+        <option value="black">검은색</option>
+        <option value="blue">파란색</option>
+    </select>
+
+    <select name="color2" multiple>
+        <!--muliple 다중선택(여러개를 선택-ctrl을 눌러서 선택)-->    
+         <option value="red">붉은색</option>
+         <option value="black">검은색</option>
+         <option value="blue">파란색</option>
+    </select>
+
+    <h1>색상(동그라미로 선택-단일선택)</h1>
+    <!--radio는 네임값이 같은 것들끼리 그룹핑 - 같은 그룹중 하나가 선택되면 나머지가 해지됨--> 
+            붉은색 : <input type="radio" name="color" value="red">
+            검은색 : <input type="radio" name="color" value="black" checked>
+            <!--checked = 기본적으로 선택됨-->
+            파란색 : <input type="radio" name="color" value="blue">
+
+    <h1>사이즈(네모로 선택-다중선택)</h1>
+            95 : <input type="checkbox" name="size" value="95">
+            100 : <input type="checkbox" name="size" value="100" checked>
+            105 : <input type="checkbox" name="size" value="105" checked>
+            </p>
+            <input type="submit">
+
+
+</form>
+
+
+</body>
+</html>
